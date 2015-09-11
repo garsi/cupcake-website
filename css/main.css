@@ -1,0 +1,264 @@
+/* ==========================================================================
+   Kat's styles
+   ========================================================================== */
+/* IMPORT START: LESS */
+/*** VARIABLES: LESS ***/
+/* COLOR SCHEME */
+/* TYPOGRAPHY */
+/*** MIXINS: LESS ***/
+/**
+ * These are the functions used throughout the application. This is where
+ * overwrites that are not specific to components should be maintained.
+ */
+/* cubic-bezier, animationName, point-01, point-02, point-03, point-04 */
+/* loading animation */
+/* 1200px / 16px */
+/* 992px / 16px */
+/* 768px / 16px */
+/*** TYPOGRAPHY: LESS ***/
+body {
+  color: #5a5a5d;
+  font-family: 'Cabin', Helvetica, arial, sans-serif;
+  font-size: 1em;
+}
+h1 {
+  font-family: 'Sofia', "Goudy Old Style", Garamond, "Big Caslon", "Times New Roman", cursive;
+  text-align: center;
+}
+h2 {
+  font-family: 'Cabin', Helvetica, arial, sans-serif;
+}
+h3 {
+  color: #a1e3bc;
+  margin-top: 25px;
+  text-align: center;
+}
+p,
+li {
+  font-size: 1.5em;
+}
+.nav a {
+  color: #ffffff;
+  font-size: 1.25em;
+}
+.nav span {
+  position: absolute;
+  top: 30%;
+  left: 95%;
+  font-size: 1.5em;
+  color: #46c3dc;
+  z-index: 3;
+  display: none;
+}
+span {
+  font-size: .6em;
+  padding: 0 12px;
+  color: #ffedec;
+}
+.page-highlight h2,
+.page-content h2,
+.page-action h2 {
+  margin-bottom: 20px;
+  color: #389baf;
+  font-family: 'Sofia', "Goudy Old Style", Garamond, "Big Caslon", "Times New Roman", cursive;
+}
+.page-content h2,
+.page-action h2 {
+  text-align: center;
+}
+.page-action h2 {
+  color: #ffffff;
+}
+.page-action p {
+  text-align: center;
+}
+footer {
+  color: #389baf;
+  text-align: center;
+}
+footer .coder {
+  font-size: 1.15em;
+}
+/*** FORMS: LESS ***/
+button,
+input[type="submit"] {
+  height: 50px;
+  max-width: 300px;
+  margin: 25px auto;
+  padding: 0 50px;
+  background: #a1e3bc;
+  border: 3px solid transparent;
+  border-radius: 5px;
+  box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.25);
+  color: #ffffff;
+  font-size: 2em;
+  transition: all 0.4s ease 0s;
+}
+button:hover,
+input[type="submit"]:hover {
+  background: #ffffff;
+  border: 3px solid #a1e3bc;
+  border-radius: 20px;
+  box-shadow: none;
+  color: #a1e3bc;
+}
+.facebook-test {
+  border: 1px solid #f4f6f6;
+}
+.container-fluid {
+  padding-left: 0;
+  padding-right: 0;
+}
+.row {
+  margin: 0;
+}
+img {
+  width: 100%;
+  box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.25);
+}
+button,
+input[type="submit"] {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+#logo-hold {
+  width: 75px;
+  height: 75px;
+  margin: 0 auto;
+  border-radius: 150px;
+  background: #ccf4dc;
+}
+#logo-hold h1 {
+  padding-top: 20px;
+  font-size: 1.75em;
+}
+header {
+  height: 90px;
+}
+.navbar-default {
+  background-color: #a1e3bc;
+  border: none;
+}
+.navbar {
+  margin-bottom: 0;
+}
+.nav > li > a {
+  padding: 8px 0;
+}
+.nav > li > a:focus,
+.nav > li > a:hover {
+  background: #acf1ff;
+  color: #5a5a5d;
+}
+.nav-pills > li.active > a,
+.nav-pills > li.active > a:focus,
+.nav-pills > li.active > a:hover {
+  background: #ccf4dc;
+  color: #5a5a5d;
+}
+.navbar-collapse {
+  padding-right: 0;
+  padding-left: 0;
+}
+/* HAMBURGER */
+.navbar-default .navbar-toggle {
+  border: none;
+  width: 44px;
+}
+.navbar-default .navbar-toggle:focus,
+.navbar-default .navbar-toggle:hover {
+  background-color: #ccf4dc;
+  border-radius: 4px;
+  box-shadow: none;
+}
+.navbar-default .navbar-toggle {
+  box-shadow: none;
+}
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #f4f6f6;
+  border: none;
+}
+.page-highlight,
+.page-content {
+  padding: 25px 10px 50px;
+}
+.page-highlight img,
+.page-content img {
+  max-width: 300px;
+}
+.page-content img,
+.page-highlight img {
+  display: block;
+  margin: auto;
+}
+.page-highlight {
+  background: #ccf4dc;
+}
+.page-highlight img {
+  margin-top: 25px;
+  max-width: 500px;
+}
+.page-action {
+  background: #46c3dc;
+  padding: 0 20px 50px;
+}
+.page-action img {
+  max-width: 300px;
+}
+.col-sm-6.post-preview {
+  padding-left: 0;
+  padding-right: 0;
+}
+.post-preview {
+  background: #ffffff;
+  margin-top: 50px;
+  padding: 20px 20px 15px;
+  box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.post-preview img {
+  display: block;
+  margin: auto;
+  width: 50%;
+  box-shadow: none;
+}
+.map {
+  padding: 20px -10px;
+  background-image: url(../../img/map-test.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.map-text {
+  position: relative;
+  top: 20px;
+  left: 40px;
+  width: 75%;
+  padding: 40px 10px;
+  background: rgba(255, 255, 255, 0.5);
+}
+.img-stack-2x2 img {
+  width: 40%;
+  margin: 5%;
+  float: left;
+}
+footer {
+  background-color: #ccf4dc;
+  padding: 50px 0;
+}
+footer .icon-circle {
+  box-shadow: none;
+  width: 50px;
+  margin: 0 10px 25px;
+}
+/* IMPORT END | MEDIA QUERIES: LESS */
+/*** SMALL DEVICES: LESS ***/
+/* Small devices (phones and tablets, 768px and up) */
+/*** MEDIUM DEVICES: LESS ***/
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  #navbar > ul {
+    padding: 0 5%;
+  }
+}
+/*** LARGE DEVICES: LESS ***/
+/* Large devices (large desktops, 1200px and up) */

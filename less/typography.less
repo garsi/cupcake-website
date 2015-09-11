@@ -1,0 +1,81 @@
+/*** TYPOGRAPHY: LESS ***/
+
+body {
+	color: @charcoal;
+	font-family: @font-body;
+	font-size: 1em;
+}
+
+h1 {
+	font-family: @font-header;
+	text-align: center;
+}
+
+h2 {
+	font-family: @font-body;
+}
+
+h3 {
+	color: @sweetmintdark;
+	margin-top: 25px;
+	text-align: center;
+}
+
+p, li {
+	font-size: 1.5em;
+}
+
+.nav a {
+    color: @white;
+    font-size: 1.25em;
+}
+
+.nav span {
+	position: absolute;
+	top: 30%;
+	left: 95%;
+	font-size: 1.5em;
+	color: @heyblue;
+	z-index: 3;
+	display: none;
+}
+
+span {
+	font-size: .6em;
+	padding: 0 12px;
+	color: @gopink;
+}
+
+.page-highlight {
+  h2 {
+  	margin-bottom: 20px;
+    color: @heybluedark;
+    font-family: @font-header;
+  }
+}
+
+.page-content {
+	h2 {
+		&:extend(.page-highlight h2);
+		text-align: center;
+	}
+}
+
+.page-action {
+	h2 {
+		&:extend(.page-content h2);
+		color: @white;
+	}
+	p { 
+		text-align: center;
+	}
+}
+
+
+footer {
+	color: @heybluedark;
+	text-align: center;
+	.coder {
+		font-size: 1.15em;
+	}
+}

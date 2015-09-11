@@ -1,0 +1,184 @@
+/* ==========================================================================
+   Kat's styles
+   ========================================================================== */
+
+/* IMPORT START: LESS */
+@import url('variables.less');
+@import url('mixins.less');
+@import url('typography.less');
+//@import url('responsive-background.less');
+@import url('forms.less');
+
+.facebook-test {
+  border: 1px solid @clouds;
+}
+
+.container-fluid {
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.row {
+  margin: 0;
+}
+
+img {
+  width: 100%;
+  box-shadow: @box-shadow;
+}
+
+button, input[type="submit"] {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#logo-hold {
+  width: 75px;
+  height: 75px;
+  margin: 0 auto;
+  border-radius: 150px;
+  background: @sweetmint;
+  h1 {
+    padding-top: 20px;
+    font-size: 1.75em;
+  }
+}
+
+header {
+	height: 90px;
+}
+
+.navbar-default {
+    background-color: @sweetmintdark;
+    border: none;
+}
+
+.navbar {
+  margin-bottom: 0;
+}
+
+.nav>li>a {
+	padding: 8px 0;
+}
+
+.nav>li>a:focus, .nav>li>a:hover {
+  background: @heybluelight;
+  color: @charcoal;
+}
+
+.nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover {
+  background: @sweetmint;
+  color: @charcoal;
+}
+
+.navbar-collapse {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+/* HAMBURGER */
+.navbar-default .navbar-toggle {
+  border: none;
+  width: 44px;
+}
+
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+  background-color: @sweetmint;
+  border-radius: 4px;
+  box-shadow: none;
+}
+
+.navbar-default .navbar-toggle {
+  box-shadow: none;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: @clouds;
+  border: none;
+}
+
+.page-highlight, .page-content {
+  padding: 25px 10px 50px;
+    img {
+      max-width: 300px;
+    }
+}
+
+.page-content img, .page-highlight img {
+  display: block;
+  margin: auto;
+}
+
+.page-highlight {
+  background: @sweetmint;
+  img {
+    margin-top: 25px;
+    max-width: 500px;
+  }
+}
+
+.page-action {
+  background: @heyblue;
+  padding: 0 20px 50px;
+  img {
+    max-width: 300px;
+  }
+}
+
+.col-sm-6.post-preview {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.post-preview {
+  background: @white;
+  margin-top: 50px;
+  padding: 20px 20px 15px;
+  box-shadow: @box-shadow;
+  img {
+    display: block;
+    margin: auto;
+    width: 50%;
+    box-shadow: none;
+  }
+}
+
+.map {
+  padding: 20px -10px;
+  background-image: url(../../img/map-test.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.map-text {
+  position: relative;
+  top: 20px;
+  left: 40px;
+  width: 75%;
+  padding: 40px 10px;
+  background: rgba(255, 255, 255, 0.5)
+}
+
+.img-stack-2x2 {
+  img {
+    width: 40%;
+    margin: 5%;
+    float: left;
+  }
+}
+
+footer {
+  background-color: @sweetmint;
+  padding: 50px 0;
+  .icon-circle {
+    box-shadow: none;
+    width:50px;
+    margin: 0 10px 25px;
+  }
+}
+
+/* IMPORT END | MEDIA QUERIES: LESS */
+@import url('mq-small.less');
+@import url('mq-medium.less');
+@import url('mq-large.less');
