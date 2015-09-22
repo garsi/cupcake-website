@@ -1,26 +1,26 @@
 /*** TYPOGRAPHY: LESS ***/
 
 body {
-	color: @charcoal;
+	color: @chalkboard;
 	font-family: @font-body;
 	font-size: 1em;
 }
 
 h1 {
-	color: @heybluedark;
+	color: darken(@heyblue, 15%);
 	font-family: @font-header;
 	font-size: 3.5em;
 	text-align: center;
 }
 
 h2 {
-	color: @heybluedark;
+	color: darken(@heyblue, 15%);
 	font-family: @font-header;
 	font-size: 3em;
 }
 
 h3 {
-	color: @sweetmintdark;
+	color: darken(@sweetmint, 10%);
 	font-size: 2.4em;
 	margin-top: 25px;
 	text-align: center;
@@ -37,8 +37,9 @@ h5 {
 }
 
 li:before  {
-	content: "\2726";
-	color: @heyblue;
+	//content: "\2726";
+	content: "\25cf";
+	color: @gopinkdark;
 	padding-right: 10px;
 }
 
@@ -46,15 +47,51 @@ p, li {
 	font-size: 1.5em;
 }
 
-hr {
-	margin: 30px 0px 25px;
-    height: 1px;
-    background: @sweetmintdark;
-    background: -webkit-gradient(linear, 0 0, 100% 0, from(@sweetmintlight), to(@sweetmintlight), color-stop(50%, @sweetmintdark));
+a, a:visited, a:focus {
+	color: @heyblue;
 }
 
+a:hover {
+	text-decoration: underline;
+	color: lighten(@heyblue, 10%);
+}
+
+hr {
+	//margin: 30px auto 25px;
+	//width: 80%;
+    //height: 1px;
+    //background: @gopinkdark;
+    //background: -webkit-gradient(linear, 0 0, 100% 0, from(@heybluelight), to(@sweetmintlight), color-stop(50%, @heybluelight));
+	border: 0; 
+	height: 1px; 
+	background-image: -webkit-linear-gradient(left, @heybluelight, @heybluedark, @heybluelight);
+	background-image: -moz-linear-gradient(left, @heybluelight, @heybluedark, @heybluelight);
+	background-image: -ms-linear-gradient(left, @heybluelight, @heybluedark, @heybluelight);
+	background-image: -o-linear-gradient(left, @heybluelight, @heybluedark, @heybluelight); 
+}
+
+.icon-circle {
+	box-shadow: none;
+	width: 50px;
+	margin: 0 10px 25px;
+ }
+
+ .icons-social {
+ 	visibility: hidden;
+ 	padding-right: 25px;
+ 	.icon-circle {
+ 		&:extend(.icon-circle);
+ 		float: right;
+		width: 40px;
+ 		height: 40px;
+ 		margin: 20px 5px;
+ 		background: @white;
+ 		border-radius: 40px;
+ 	}
+ }
+
 figcaption {
-	color: @sweetmintdark;
+	color: darken(@sweetmint, 5%);
 	font-size: 1.5em;
 	margin-top: 15px;
 }
@@ -64,19 +101,26 @@ figcaption {
     font-size: 1.25em;
 }
 
-.nav span {
-	position: absolute;
-	top: 30%;
-	left: 95%;
-	font-size: 1em;
-	color: @heyblue;
-	z-index: 3;
-	visibility: hidden;
-}
-
 nav li:before {
 	content: none;
 }
+
+nav li span {
+	position: absolute;
+	top: 30%;
+	left: 0;
+	font-size: 1em;
+	color: @heyblue;
+	visibility: hidden;
+}
+
+/*nav li:before {
+	content: '\2726';
+}
+
+nav li:first-child:before {
+	content: none;
+}*/
 
 .page-content .intro p {
 	width: 80%;
@@ -84,16 +128,31 @@ nav li:before {
 	text-align: center;
 }
 
+.deliver p {
+	display: inline-block;
+	padding-right: 10px;
+	color: @heybluedark;
+	font-family: @font-header;
+	font-size: 2.4em;
+}
+
 .dots {
 	font-size: .6em;
-	padding: 0 12px;
-	color: @gopink;
+	padding: 0 6px;
+	color: @gopinkdark;
 }
+
+/*.dots:before {
+	content: "\25cf";
+}*/
 
 .page-highlight {
   h2 {
   	margin-bottom: 20px;
-    color: @heybluedark;
+    color: darken(@heyblue, 15%);
+  }
+  .dots {
+  	color: @heyblue;
   }
 }
 
@@ -101,7 +160,7 @@ nav li:before {
 	h2 {
 		&:extend(.page-highlight h2);
 		text-align: center;
-		margin-top: 0;
+		margin-top: 15px;
 	}
 	p, li {
 		text-align: center;
@@ -126,8 +185,18 @@ nav li:before {
 		text-align: center;
 		margin-bottom: 0;
 	}
-	.post-preview {
-		color: @charcoal;
+}
+
+.promote {
+	p {
+		color: @chalkboard;
+	}
+}
+
+.menu {
+	h3 {
+		font-size: 1.5em;
+		color: darken(@sweetmint, 10%);
 	}
 }
 
@@ -136,7 +205,7 @@ nav li:before {
 }
 
 footer {
-	color: @heybluedark;
+	color: darken(@heyblue, 15%);
 	text-align: center;
 	.coder {
 		font-size: 1.15em;

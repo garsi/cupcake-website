@@ -31,10 +31,19 @@
   <script src="js/modernizr.js"></script>
 </head>
 <body class="container-fluid">
+  <!--<div class="pre-header">
+
+  </div>-->
   <header>
-    <a href="index.html"><div id="logo-hold">
-    <h1>hello, cupcake</h1>
-    </div></a>
+    <div class="icons-social">
+      <img class="icon-circle" src="img/icon-truck_outline_bl.png">
+      <img class="icon-circle" src="img/icon-cupcake_outline_bl.png">
+      <img class="icon-circle" src="img/icon-insta_outline_bl.png">
+      <img class="icon-circle" src="img/icon-fb_outline_bl.png">
+    </div>
+    <div id="logo-hold">
+    <a href="index.html"><h1>hello, cupcake</h1></a>
+    </div>
   </header>
 
   <!-- Static navbar -->
@@ -49,12 +58,12 @@
     </div>
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav nav-pills nav-justified">
-        <li><a href="about.html">about</a><span>&#x2726;</span></li>
-        <li><a href="menu.html">menu</a><span>&#x2726;</span></li>
-        <li><a href="order-cupcakes.html">order cupcakes</a><span>&#x2726;</span></li>
-        <li><a href="party-room.html">party room</a><span>&#x2726;</span></li>
-        <li><a href="celebrations.html">celebrations</a><span>&#x2726;</span></li>
-        <li><a href="news.html">news</a></li>
+        <li><a href="about.html">about</a></li>
+        <li><span>&#x2726;</span><a href="menu.html">menu</a></li>
+        <li><span>&#x2726;</span><a href="#">order cupcakes</a></li>
+        <li><span>&#x2726;</span><a href="party-room.html">party room</a></li>
+        <li><span>&#x2726;</span><a href="celebrations.html">celebrations</a></li>
+        <li><span>&#x2726;</span><a href="news.html">news</a></li>
       </ul>
     </div>
   </nav>
@@ -68,6 +77,10 @@
         <h2 style="text-align:left;">tacoma's premier cupcake bakery!</h2>
         <p>our shop is located on the University of Washington Tacoma campus at 1740 Pacific Avenue Tacoma, WA 98402.</p>
         <p>shop hours<br>sunday to monday 11am to 6pm<br>tuesday to saturday 10am to 6pm</p>
+        <div class="deliver">
+          <p>We Deliver!</p>
+          <img src="img/truck.png" />
+        </div>
       </article>
       <aside class="col-sm-6">
         <img src="http://placehold.it/534x300">
@@ -78,7 +91,7 @@
     </div>
     <section class="page-content">
     <div class="row"> <!-- start row -->
-      <h2><span class="dots">&#x2726;</span>cupcake menu<span class="dots">&#x2726;</span></h2>
+      <h2><span class="dots">&#x2726;</span> cupcake menu <span class="dots">&#x2726;</span></h2>
       <aside class="col-sm-6">
         <img src="http://placehold.it/500x500">
       </aside>
@@ -104,36 +117,47 @@
           <li>carrot</li>
         </ul>
       </article>
-      <div class="col-xs-12 deliver">
-        <img src="img/truck.png" />
+      <div class="col-xs-12">
+        <button>order cupcakes</button>
       </div>
-      <button>order cupcakes</button>
     </div> <!-- end row -->
     </section>
-    <section class="page-action">
+    <section class="page-action promote">
     <div class="row"> <!-- start row -->
-      <h2><span class="dots">&#x2726;</span>celebrations<span class="dots">&#x2726;</span></h2>
-      <article class="col-lg-6 post-preview">
-        <div class="row">
-          <div class="col-sm-4 post-image">
+      <h2><span class="dots">&#x2726;</span> celebrations <span class="dots">&#x2726;</span></h2>
+      <article class="col-sm-4">
+        <div class="promote-container">
+          <div class="promote-image">
             <img src="http://placehold.it/500x500">
           </div>
-          <div class="col-sm-8 post-details">
+          <div class="promote-details">
             <h3>book our party room</h3>
             <p>add a sweet treat to your special event. perfect for your wedding day, shower, office party, birthday, tailgate or any occaision. celebrate in delicious style.</p>
-          <button>reserve</button>
+          <button>more details</button>
           </div>
         </div>
       </article>
-      <article class="col-lg-6 post-preview">
-        <div class="row">
-          <div class="col-sm-4 post-image">
+      <article class="col-sm-4">
+        <div class="promote-container">
+          <div class="promote-image">
             <img src="http://placehold.it/500x500">
           </div>
-          <div class="col-sm-8 post-details">
+          <div class="promote-details">
             <h3>cupcake catering</h3>
             <p>add a sweet treat to your special event. perfect for your wedding day, shower, office party, birthday, tailgate or any occaision. celebrate in delicious style.</p>
-            <button>reserve</button>
+          <button>more details</button>
+          </div>
+        </div>
+      </article>
+      <article class="col-sm-4">
+        <div class="promote-container">
+          <div class="promote-image">
+            <img src="http://placehold.it/500x500">
+          </div>
+          <div class="promote-details">
+            <h3>hello, rewards!</h3>
+            <p>Have you always dreamed of getting FREE cupcakes but never thought it was possible? All you have to do is sign up for our new customer rewards program.</p>
+          <button>more details</button>
           </div>
         </div>
       </article>
@@ -143,7 +167,7 @@
     </div>
     <section class="page-content map-section">
     <div class="row"> <!-- start row -->
-      <h2><span class="dots">&#x2726;</span>visit us<span class="dots">&#x2726;</span></h2>
+      <h2><span class="dots">&#x2726;</span> visit us <span class="dots">&#x2726;</span></h2>
       <article class="map-article">
         <div class="map-text">
           <p>our shop is located on the University of Washington Tacoma campus at 1740 Pacific Avenue Tacoma, WA 98402.</p>
@@ -187,6 +211,8 @@
     </div> <!-- end row -->
     </section>
   </main>
+  <div class="sprinkles">
+  </div>
   <footer>
     <img class="icon-circle" src="img/icon-fb.png">
     <img class="icon-circle" src="img/icon-insta.png">

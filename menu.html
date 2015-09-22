@@ -32,6 +32,12 @@
 </head>
 <body class="container-fluid">
   <header>
+    <div class="icons-social">
+      <img class="icon-circle" src="img/icon-truck_outline_bl.png">
+      <img class="icon-circle" src="img/icon-cupcake_outline_bl.png">
+      <img class="icon-circle" src="img/icon-insta_outline_bl.png">
+      <img class="icon-circle" src="img/icon-fb_outline_bl.png">
+    </div>
     <a href="index.html"><div id="logo-hold">
     <h1>hello, cupcake</h1>
     </div></a>
@@ -51,7 +57,7 @@
       <ul class="nav nav-pills nav-justified">
         <li><a href="about.html">about</a><span>&#x2726;</span></li>
         <li class="active"><a href="menu.html">menu</a><span>&#x2726;</span></li>
-        <li><a href="order-cupcakes.html">order cupcakes</a><span>&#x2726;</span></li>
+        <li><a href="#">order cupcakes</a><span>&#x2726;</span></li>
         <li><a href="party-room.html">party room</a><span>&#x2726;</span></li>
         <li><a href="celebrations.html">celebrations</a><span>&#x2726;</span></li>
         <li><a href="news.html">news</a></li>
@@ -62,71 +68,130 @@
     <section class="hero">
       <img src="http://placehold.it/1440x405">
     </section>
-    <section class="page-content">
+    <div class="sprinkles">
+    </div>
+    <section class="page-content featured">
     <div class="row"> <!-- start row -->
-      <h2><span class="dots">&#x2726;</span>cupcake menu<span  class="dots">&#x2726;</span></h2>
+      <h2><span class="dots">&#x2726;</span> cupcake menu <span class="dots">&#x2726;</span></h2>
       <aside class="col-sm-6">
         <img src="http://placehold.it/500x500">
       </aside>
       <article class="col-sm-6">
+        <h4>this month's featured flavor</h4>
         <h3>peanut butter &amp; jelly</h3>
-        <p>this month's featured flavor</p>
-        <div class="col-xs-12 deliver">
+        <p>all of our cupcakes are baked from scratch daily using the finest quality ingredients and topped with delectable handmade buttercreams</p>
+        <p class="pricing">
+          <ul>
+            <li>single $3</li>
+            <li>four $11.50</li>
+            <li>six $17</li>
+            <li>dozen $32</li>
+            <li>mini $1.50</li>
+            <li>dozen minis $16</li>
+          </ul>
+        </p>
+        <div class="deliver">
+          <p>We Deliver!</p>
           <img src="img/truck.png" />
         </div>
-        <button>order cupcakes</button>
       </article>
+      <div class="col-xs-12">
+        <button>order cupcakes</button>
+      </div>
     </div> <!-- end row -->
+    <hr>
     </section>
     <section class="page-highlight menu">
     <div class="row"> <!-- start row -->
-      <article>
+      <article class="gallery gallery-fw">
         <div class="row">
-          <figure class="col-xs-4">
-            <figcaption>vanilla</figcaption>
-            <img src="http://placehold.it/500x500">
-          </figure>
-          <figure class="col-xs-4">
-            <figcaption>pumpkin spice</figcaption>
-            <img src="http://placehold.it/500x500"> 
-          </figure>
-          <figure class="col-xs-4">
-            <figcaption>chocolate</figcaption>
-            <img src="http://placehold.it/500x500">
-          </figure>
-        </div>
-        <div class="row">
-          <figure class="col-xs-4">
-            <figcaption>salted caramel</figcaption>
-            <img src="http://placehold.it/500x500">
-          </figure>
-          <figure class="col-xs-4">
-            <figcaption>red velvet</figcaption>
-            <img src="http://placehold.it/500x500"> 
-          </figure>
-          <figure class="col-xs-4">
-            <figcaption>chocolate peanut</figcaption>
-            <img src="http://placehold.it/500x500">
-          </figure>
-        </div>
-        <div class="row">
-          <figure class="col-xs-4">
-            <figcaption>carrot</figcaption>
-            <img src="http://placehold.it/500x500">
-          </figure>
-          <figure class="col-xs-4">
-            <figcaption>german chocolate</figcaption>
-            <img src="http://placehold.it/500x500">
-          </figure>
-          <figure class="col-xs-4">
-            <figcaption>french toast</figcaption>
-            <img src="http://placehold.it/500x500">
-          </figure>
-        </div>
+          <article class="col-xs-6 col-sm-4">
+            <div class="cupcake">
+              <h3>pumpkin spice</h3>
+              <img src="img/pumpkin-spice.png">
+              <div class="caption">
+                <p>pumpkin spice cake with caramel cream cheese frosting</p>
+              </div>
+            </div>
+          </article>
+          <article class="col-xs-6 col-sm-4">
+            <div class="cupcake">
+              <h3>salted caramel</h3>
+              <img src="img/pumpkin-spice.png">
+              <div class="caption">
+                <p>pumpkin spice cake with caramel cream cheese frosting</p>
+              </div>
+            </div>
+          </article>
+          <article class="col-xs-6 col-sm-4">
+            <div class="cupcake">
+              <h3>chocolate peanut butter</h3>
+              <img src="img/pumpkin-spice.png">
+              <div class="caption">
+                <p>pumpkin spice cake with caramel cream cheese frosting</p>
+              </div>
+            </div>
+          </article>
+          <article class="col-xs-6 col-sm-4">
+            <div class="cupcake">
+              <h3>german chocolate</h3>
+              <img src="img/pumpkin-spice.png">
+              <div class="caption">
+                <p>pumpkin spice cake with caramel cream cheese frosting</p>
+              </div>
+            </div>
+          </article>
+          <article class="col-xs-6 col-sm-4">
+            <div class="cupcake">
+              <h3>french toast</h3>
+              <img src="img/pumpkin-spice.png">
+              <div class="caption">
+                <p>pumpkin spice cake with caramel cream cheese frosting</p>
+              </div>
+            </div>
+          </article>
+          <article class="col-xs-6 col-sm-4">
+            <div class="cupcake">
+              <h3>vanilla</h3>
+              <img src="img/pumpkin-spice.png">
+              <div class="caption">
+                <p>pumpkin spice cake with caramel cream cheese frosting</p>
+              </div>
+            </div>
+          </article>
+          <article class="col-xs-6 col-sm-4">
+            <div class="cupcake">
+              <h3>chocolate</h3>
+              <img src="img/pumpkin-spice.png">
+              <div class="caption">
+                <p>pumpkin spice cake with caramel cream cheese frosting</p>
+              </div>
+            </div>
+          </article>
+          <article class="col-xs-6 col-sm-4">
+            <div class="cupcake">
+              <h3>red velvet</h3>
+              <img src="img/pumpkin-spice.png">
+              <div class="caption">
+                <p>pumpkin spice cake with caramel cream cheese frosting</p>
+              </div>
+            </div>
+          </article>
+          <article class="col-xs-6 col-sm-4">
+            <div class="cupcake">
+              <h3>carrot</h3>
+              <img src="img/pumpkin-spice.png">
+              <div class="caption">
+                <p>pumpkin spice cake with caramel cream cheese frosting</p>
+              </div>
+            </div>
+          </article>
       </article>
     </div> <!-- end row -->
     </section>
   </main>
+  <div class="sprinkles">
+  </div>
   <footer>
     <img class="icon-circle" src="img/icon-fb.png">
     <img class="icon-circle" src="img/icon-insta.png">

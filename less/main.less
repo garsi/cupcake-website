@@ -11,14 +11,14 @@
 
 #facebook-test {
   border: 1px solid @clouds;
-  max-width: 800px;
+  max-width: 600px;
 }
 
 .field-test {
   width: 200px;
   height: 50px;
   background: @white;
-  color: @charcoal;
+  color: @chalkboard;
   margin: 10px auto;
   line-height: 50px;
   border-radius: 5px;
@@ -38,12 +38,6 @@ img {
   box-shadow: @box-shadow;
 }
 
-button, input[type="submit"] {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 #logo-hold {
   width: 75px;
   height: 75px;
@@ -53,19 +47,28 @@ button, input[type="submit"] {
   h1 {
     padding-top: 20px;
     font-size: 1.75em;
-    color: @charcoal;
+    color: @chalkboard;
   }
 }
 
+/*.pre-header {
+  height: 30px;
+  margin-top: -10px;
+  padding-top: 0;
+  background: @white;
+  border-bottom: 1px dotted @heybluedark;
+}
+*/
+
 header {
-  height: 115px;
+  height: 135px;
   padding-top: 5px;
-  background-image: url(../img/sprinkles-test_2.png);
+  background-image: url(../img/sprinkles-header.png);
 	background-repeat: repeat-x;
 }
 
 .navbar-default {
-    background-color: @sweetmintdark;
+    background-color: darken(@sweetmint, 5%);
     border: none;
 }
 
@@ -76,21 +79,21 @@ header {
 .nav>li>a {
 	padding: 8px 0;
   margin: 0 8%;
-  border: 3px solid @sweetmintdark;
+  border: 3px solid darken(@sweetmint, 5%);
 }
 
 .nav>li>a:focus, .nav>li>a:hover {
   background-color: @sweetmint;
-  border: 3px solid @sweetmintdark;
+  border: 3px solid darken(@sweetmint, 5%);
   border-radius: 4px;
-  color: @heyblue;
+  color: @chalkboard;
 }
 
 .nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover {
   background: transparent;
-  color: @heybluedark;
-  border-bottom: 3px solid @sweetmint;
-  border-top: 3px solid @sweetmint;
+  color: @chalkboard;
+  border-bottom: 3px solid lighten(@sweetmint, 10%);
+  //border-top: 3px solid lighten(@sweetmint, 10%);
   border-radius: 0;
 }
 
@@ -160,34 +163,43 @@ header {
   }
 }
 
-.post-preview.col-sm-6 {
+.promote.col-sm-6 {
   padding-left: 0;
   padding-right: 0;
 }
 
-.post-preview {
-  background: @white;
-  margin-top: 50px;
-  padding: 20px 20px 0;
-  box-shadow: @box-shadow;
+.promote {
+  h2 {
+    margin-bottom: 30px;
+  }
 }
 
-.post-image {
+.promote-container {
+  width: 90%;
+  max-width: 300px;
+  margin: 0 auto 30px;
+  padding: 0px;
+  background: @white;
+  //box-shadow: @box-shadow;
+}
+
+.promote-image {
   img {
     display: block;
-    margin: auto;
-    width: 50%;
+    margin: 0;
+    padding-left: 0px;
+    padding-right: 0px;
+    width: 100%;
     box-shadow: none;
   }
 }
 
+.promote-details {
+  padding: 0 15px 15px;
+}
+
 .page-highlight.menu {
   background: @white;
-  h3 {
-    width: 27.3%;
-    margin: 3%;
-    float: left;
-  }
 }
 
 .page-content.map-section {
@@ -210,11 +222,28 @@ header {
   background: rgba(255, 255, 255, 0.5)
 }
 
+.social {
+  margin-top: 25px;
+}
+
 .gallery {
   div {
   margin-bottom: 25px;
   }
 }
+
+.deliver {
+  img {
+    display: inline;
+    box-shadow: none;
+    width: 100px;
+  }
+  hr {
+    margin-top: 0;
+  }
+}
+
+/** MENU PAGE **/
 
 .menu {
   img {
@@ -222,22 +251,52 @@ header {
   }
 }
 
-.deliver {
-  img {
-    box-shadow: none;
-    width: 200px;
-    margin: 25px auto;
+.featured {
+  h3 {
+    margin-top: 0;
+  }
+  h4 {
+    text-align: center;
   }
 }
 
+.page-content.featured {
+  padding-bottom: 0px;
+}
+
+.cupcake {
+  position: relative;
+}
+
+.cupcake.col-xs-6 {
+  padding-right: 2.5%;
+  padding-left: 2.5%;
+}
+
+.caption {
+  display: none;
+  position: absolute;
+  width: 100%;
+  height: auto;
+  bottom: -25px;
+  left: 0;
+  //background: rgba(255,237,236,.8); //pink
+  background: rgba(255,215,213,.8); //pinkdark
+  //background: rgba(225,255,255,.8); //white
+    p {
+      color: @chalkboard;
+      font-size: 1.5em;
+      padding: 5px 10px 0px 10px;
+      line-height: 1.2em;
+      text-align: center;
+    }
+}
+
+/* PARTY & CELEBRATIONS PAGES */
+
 footer {
-  background-color: @sweetmint;
+  background-color: lighten(@sweetmint, 5%);
   padding: 50px 0;
-  .icon-circle {
-    box-shadow: none;
-    width:50px;
-    margin: 0 10px 25px;
-  }
 }
 
 /* IMPORT END | MEDIA QUERIES: LESS */

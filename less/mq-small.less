@@ -22,6 +22,12 @@
   		text-align: left;
   	}
 
+  	.menu {
+		h3 {
+			font-size: 1.75em;
+		}
+	}
+
   	.nav a {
     	font-size: 1.15em;
 	}
@@ -38,6 +44,10 @@
 		height: 155px;
 	}
 
+	.icons-social {
+		visibility: visible;
+	}
+
 	.page-highlight {
 		padding: 20px 35px 75px;
 	}
@@ -50,8 +60,8 @@
 		h2 {
 			margin-bottom: 40px;
 		}
-		p, li {
-	  	text-align: left;
+		h4, h5, p, li {
+	  		text-align: left;
 	  	}
 	  	ul {
 	  		padding-left: 25px;
@@ -68,41 +78,34 @@
 		}
 	}
 
-	.post-preview.col-lg-6, .post-preview .col-sm-4 {
-		padding-top: 0;
-		padding-left: 0;
+	.promote {
+	  p {
+	    text-align: left;
+	  }
+	  h3 {
+	  	margin-top: 15px;
+	  }
 	}
 
-	.post-image {
-    img {
-      display: inline;
-      width: 100%;
-    }
+	.promote-container {
+	  width: 100%;
+	  max-width: 300px;
+	  margin-top: 0px;
+	  padding: 0px;
 	}
 
-	.post-details {
-		margin-top: 15px;
-		p {
-			text-align: left;
-		}
-		button, input[type="submit"] {
-			float: right;
-			margin-bottom: 10px;
-		}
+	.gallery-fw {
+	padding-left: 30px;
+	padding-right: 30px;
+	h3 {
+	  margin-top: 25px;
+	  margin-bottom: 25px;
+	}
 	}
 
-  .gallery-fw {
-    padding-left: 30px;
-    padding-right: 30px;
-    h3 {
-      margin-top: 25px;
-      margin-bottom: 25px;
-    }
-  }
-
-  .map-text {
-    width: 50%;
-  } 
+	.map-text {
+	width: 50%;
+	} 
 
 	.social, .celebrations, .gallery {
 		h3 {
@@ -113,11 +116,34 @@
 		}
 	}
 
-  .menu {
-    button, input[type="submit"] {
-      float: left;
-      margin-bottom: 10px;
-    }
+/* MENU PAGE */
+
+	.cupcake.col-xs-6 {
+		padding-right: 2.5%;
+		padding-left: 2.5%;
+	}
+
+	.caption {
+		p {
+		  font-size: 1.6em;
+		  padding: 5px 10px 0px 10px;
+		  line-height: 1.2em;
+		}
+	}
+
+/* CELEBRATIONS PAGES */
+	.options {
+		margin: auto;
+		padding-left: 3%;
+	}
+
+/* NEWS PAGE */
+
+  .news {
+  	button, input[type="submit"] {
+	  	float: left;
+	    margin-left: 10px;
+	}
   }
 
 }
